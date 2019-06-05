@@ -1,0 +1,5 @@
+- [ ] Add delete button for individual recordings
+- [ ] Add ability to upload to Google Drive / Kaggle
+- [ ] Add visual indicator when recording
+- [ ] Add loop feature for not wake word recording
+- [ ] Save personal info between sessions
