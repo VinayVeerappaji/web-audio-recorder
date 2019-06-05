@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<title>Nimbus trainer online</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div style="text-align: center;">
+    <h1>Nimbus trainer online</h1><br>
+    <div style="display: inline-block; text-align: left;">
+        <b>Personal</b><br><br>
+        <input value="FirstName" id="firstName" type="text" /><br>
+        <input value="LastName" id="lastName" type="text" /><br><br>
+        <u>Gender</u><br>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="m"><br>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="f"><br>
+        <label for="other">Other</label>
+        <input type="radio" name="gender" id="other" value="o"><br>
+        <br>
+
+        <b>Recording info</b><br><br>
+        <input value="Description" id="description" type="text" /><br>
+        <input value="Location" id="location" type="text" /><br><br>
+
+        <u>Noise</u><br>
+        <label for="q">Quiet</label>
+        <input type="radio" name="noise" id="q" value="q"><br>
+        <label for="m">Medium</label>
+        <input type="radio" name="noise" id="m" value="m"><br>
+        <label for="l">Loud</label>
+        <input type="radio" name="noise" id="l" value="l"><br>
+        <br>
+
+        <label for="ww">Wake Word</label>
+        <input type="radio" name="wwnotww" id="ww" value="ww"><br>
+        <label for="notww">Not Wake Word</label>
+        <input type="radio" name="wwnotww" id="notww" value="notww"><br>
+        <br>
+
+    </div>
+    <div id="controls">
+        <button id="recordButton">Record</button>
+    </div>
+    <h3>Recordings</h3>
+    <ol id="recordingsList"></ol>
+</div>
+<!-- inserting these scripts at the end to be able to use all the elements in the DOM -->
+<script src="js/recorder16k.js"></script>
+<script src="js/app.js"></script>
