@@ -17,6 +17,14 @@ var audioContext = new AudioContext;
 var recordButton = document.getElementById("recordButton");
 recordButton.addEventListener("click", startRecording);
 
+// Resumes audio context on button click. For Chrome compatibility
+document.querySelector('button').addEventListener('click', function() {
+  audioContext.resume().then(() => {
+    console.log('Playback resumed successfully');
+  });
+});
+
+
 function startRecording() {
     console.log("recordButton clicked");
 
